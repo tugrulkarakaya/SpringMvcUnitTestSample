@@ -35,8 +35,8 @@ public class IndexController {
     @PostMapping("/checkPerson")
     public String saveCustomer(@ModelAttribute("person") Person person, Model model) {
         RestTemplate restTemplate = new RestTemplate();
-        String fooResourceUrl ="http://localhost:5050/klt/api/age";
-        ResponseEntity<String> response  = restTemplate.getForEntity(fooResourceUrl + "/26", String.class);
+        String resourceUrl ="http://localhost:5050/klt/api/age";
+        ResponseEntity<String> response  = restTemplate.getForEntity(resourceUrl + "/"+person.getAge(), String.class);
         if(!response.getStatusCode().is2xxSuccessful())
         {
             model.addAttribute("error", "There is system error!");
