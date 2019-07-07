@@ -13,16 +13,25 @@
 <body>
 <div class="container">
 <h1>${formName}</h1>
-<form action="<c:url value="/"/>" method="POST">
+<form action="checkPerson" modelAttribute="person" method="POST">
   <div class="form-group">
     <label for="exampleInputLastname">Nachname</label>
-    <input type="text" name="lastName" class="form-control" id="exampleInputLastname" placeholder="Nachname">
+    <input type="text" name="lastName" class="form-control" path="lastName" id="exampleInputLastname" placeholder="Nachname">
   </div>
   <div class="form-group">
     <label for="exampleInputFirstname">Vorname</label>
-    <input type="text" name="firstName" class="form-control" id="exampleInputFirstname" placeholder="Vorname">
+    <input type="text" name="firstName" path="firstName" class="form-control" id="exampleInputFirstname" placeholder="Vorname">
   </div>
-  <button type="submit" class="btn btn-default">Anmelden!</button>
+  <div class="form-group">
+    <label for="exampleInputFirstname">Age</label>
+    <input type="text" name="age" path="age" class="form-control" id="exampleInputAge" placeholder="Age">
+  </div>
+  <div>
+  <c:if test="${not empty error}">
+    <font color="red">Error: ${error}</font>
+  </c:if>
+  </div>
+  <button type="submit" class="btn btn-default" value="Save">Anmelden!</button>
 </form>
 </div>
 </body>

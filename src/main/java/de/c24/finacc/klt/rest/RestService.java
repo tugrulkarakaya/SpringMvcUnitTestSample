@@ -1,9 +1,11 @@
 package de.c24.finacc.klt.rest;
 
+import de.c24.finacc.klt.payload.Person;
 import de.c24.finacc.klt.service.AgeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.ws.rs.GET;
@@ -40,5 +42,11 @@ public class RestService {
     @Path("/age/{age}")
     public String age(@PathParam("age") Integer age) {
         return ageService.analyzeAge(age);
+    }
+
+    @GET
+    @Path("/age/allRecords")
+    public List<Person> allRecords() {
+        return ageService.getAllRecords();
     }
 }
