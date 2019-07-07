@@ -1,5 +1,8 @@
 package de.c24.finacc.klt.rest;
 
+import de.c24.finacc.klt.service.AgeService;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +18,8 @@ import javax.ws.rs.Produces;
 @Produces("application/json")
 public class RestService {
 
+    @Autowired
+    AgeService ageService;
 
     /**
      * Ping
@@ -25,6 +30,7 @@ public class RestService {
         Map<String, String> returnMap = new HashMap<>();
         returnMap.put("ping", "ok");
         return returnMap;
+
     }
 
     /**
@@ -32,9 +38,7 @@ public class RestService {
      */
     @GET
     @Path("/age/{age}")
-    public Map<String, String> age(@PathParam("age") Integer age) {
-        Map<String, String> returnMap = new HashMap<>();
-        returnMap.put("ping", "okk");
-        return returnMap;
+    public String age(@PathParam("age") Integer age) {
+        return ageService.analyzeAge(age);
     }
 }

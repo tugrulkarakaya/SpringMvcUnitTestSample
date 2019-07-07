@@ -1,4 +1,18 @@
 package de.c24.finacc.klt.service;
 
-public class AgeServiceImp {
+import de.c24.finacc.klt.service.Generation.AgeFactory;
+import de.c24.finacc.klt.service.Generation.AgeStrategy;
+import org.springframework.stereotype.Service;
+
+@Service
+public class AgeServiceImp implements AgeService {
+
+    @Override
+    public String analyzeAge(int age) {
+        return AgeFactory.getAgeObject(age).showAgeMessage();
+    }
+
+
 }
+
+
