@@ -43,7 +43,7 @@ public class IndexController {
             return "index";
         }
         String greetingText = response.getBody();
-        if(greetingText == "OK" || greetingText =="Funny"){
+        if(greetingText.equals("OK") || greetingText.equals("Funny")){
             personService.savePerson(person);
             return "index";
         }
