@@ -2,6 +2,7 @@ package de.c24.finacc.klt.rest;
 
 import de.c24.finacc.klt.payload.Person;
 import de.c24.finacc.klt.service.AgeService;
+import de.c24.finacc.klt.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
@@ -23,6 +24,8 @@ public class RestService {
     @Autowired
     AgeService ageService;
 
+    @Autowired
+    PersonService personService;
     /**
      * Ping
      */
@@ -47,6 +50,6 @@ public class RestService {
     @GET
     @Path("/age/allRecords")
     public List<Person> allRecords() {
-        return ageService.getAllRecords();
+        return personService.getAllRecords();
     }
 }

@@ -8,5 +8,4 @@ import java.util.List;
 @Service
 public interface AgeService {
     String analyzeAge(int age);
-    List<Person> getAllRecords();
 }

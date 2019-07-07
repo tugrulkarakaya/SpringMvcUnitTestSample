@@ -12,4 +12,9 @@ public class PersonServiceImp implements PersonService {
     public void savePerson(Person person) {
         PersonRepository.Instance.addPerson(person);
     }
+
+    @Override
+    public List<Person> getAllRecords() {
+        return PersonRepository.Instance.GetAllRecords();
+    }
 }

@@ -16,10 +16,7 @@ public class AgeServiceImp implements AgeService {
         return AgeFactory.getAgeObject(age).showAgeMessage();
     }
 
-    @Override
-    public List<Person> getAllRecords() {
-        return PersonRepository.Instance.GetAllRecords();
-    }
+
 
 
 }

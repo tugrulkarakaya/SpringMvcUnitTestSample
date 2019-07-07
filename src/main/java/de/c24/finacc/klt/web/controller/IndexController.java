@@ -34,6 +34,10 @@ public class IndexController {
 
     @PostMapping("/checkPerson")
     public String saveCustomer(@ModelAttribute("person") Person person, Model model) {
+        //The best way to impleemnt rest call is actually using microservices.
+        // we can also call Rest APi internally by using Class instances
+        // I will use rest call (not the best method) for now because of time limit
+
         RestTemplate restTemplate = new RestTemplate();
         String resourceUrl ="http://localhost:5050/klt/api/age";
         ResponseEntity<String> response  = restTemplate.getForEntity(resourceUrl + "/"+person.getAge(), String.class);

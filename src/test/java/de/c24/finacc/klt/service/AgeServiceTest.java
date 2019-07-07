@@ -1,6 +1,5 @@
 package de.c24.finacc.klt.service;
 
-import de.c24.finacc.klt.service.Generation.AgeStrategy;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +7,12 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 import static org.assertj.core.api.Assertions.assertThat;
-import java.util.ArrayList;
-import java.util.List;
+
 
 
 @RunWith(SpringRunner.class)
 public class AgeServiceTest {
+
 
     //This config is not necesseeray now but I am planning to have different settings later on if I have enough time
     @TestConfiguration
@@ -23,6 +22,8 @@ public class AgeServiceTest {
             return new AgeServiceImp();
         }
     }
+
+
 
     @Autowired
     AgeService ageService;
