@@ -1,9 +1,8 @@
 package de.c24.finacc.klt.web.controller;
 
-import de.c24.finacc.klt.payload.Person;
+import de.c24.finacc.klt.model.Person;
 import de.c24.finacc.klt.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

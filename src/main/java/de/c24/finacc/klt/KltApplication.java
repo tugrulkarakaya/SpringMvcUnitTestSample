@@ -13,10 +13,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class KltApplication extends SpringBootServletInitializer {
 
-    @Bean
-    public PersonService getPersonService(){
-        return new PersonServiceImp();
-    }
+
 
     /**
      *

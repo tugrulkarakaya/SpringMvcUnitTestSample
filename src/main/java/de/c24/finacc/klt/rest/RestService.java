@@ -1,6 +1,6 @@
 package de.c24.finacc.klt.rest;
 
-import de.c24.finacc.klt.payload.Person;
+import de.c24.finacc.klt.model.Person;
 import de.c24.finacc.klt.service.AgeService;
 import de.c24.finacc.klt.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;

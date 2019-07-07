@@ -1,6 +1,6 @@
 package de.c24.finacc.klt.service;
 
-import de.c24.finacc.klt.payload.Person;
+import de.c24.finacc.klt.model.Person;
 
 import java.util.List;
 

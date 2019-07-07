@@ -5,12 +5,12 @@ C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\web\control
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\Repository\PersonRepository.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\PersonService.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\PersonServiceImp.java
-C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\payload\Person.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\Generation\AgeStrategy.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\AgeService.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\Generation\Old.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\AgeServiceImp.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\Generation\Young.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\config\JerseyConfig.java
+C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\model\Person.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\Generation\AgeFactory.java
 C:\Users\tugru\eclipse-workspace\klt\src\main\java\de\c24\finacc\klt\service\Generation\OK.java

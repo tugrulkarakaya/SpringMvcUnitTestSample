@@ -97,6 +97,11 @@
     </dependency>
 
     <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <scope>provided</scope>
@@ -137,6 +142,13 @@
       <artifactId>assertj-parent-pom</artifactId>
       <version>2.2.3</version>
       <type>pom</type>
+    </dependency>
+    <!-- H2 Database Support -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>runtime</scope>
+      <version>1.4.199</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
